@@ -1,4 +1,4 @@
 ---
-title: am I really going to commit to this?
+title: Am I really going to commit to this?
 ---
 

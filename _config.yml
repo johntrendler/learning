@@ -1,7 +1,6 @@
 theme: minima
 title: learning
 author: John Trendler
-
   ---
   avatar: profile.png
   name: John Trendler
@@ -9,6 +8,7 @@ author: John Trendler
   bio              : "just dabbling"
   location         : "Claremont, CA"
 ---
+
 
 
 

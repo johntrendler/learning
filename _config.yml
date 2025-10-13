@@ -2,10 +2,12 @@ theme: minima
 title: learning
 author:
   # Biographic information
+  ---
   avatar           : "profile.png"
   name             : "John Trendler"
   pronouns         : "he/him"  
   bio              : "just dabbling"
   location         : "Claremont, CA"
+---
 
 

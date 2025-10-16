@@ -1,5 +1,5 @@
 --- 
 author: John Trendler
-title: blog
+title: home
 ---
 (so I'm guessing this goes above the blog posts?)

@@ -1,0 +1,26 @@
+---
+title: Seven
+---
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<h1> whoo boy</h1>
+got the hang of posting a little every day, but soon I need to sink my teeth into more.<BR>
+</body>

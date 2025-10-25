@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
+    {{ content }}
+
+    <h2>other posts</h2>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a>a></h3>
+        {{ post.excerpt }}
+      </li>
+    </ul>
+  </body>
+</html>

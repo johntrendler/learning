@@ -21,8 +21,11 @@ veil of dust
   </html>
 -->
 <h2 style="color:red;">Something from Nothing HTML</h2>
-<form action="https://cat-bounce.com/">
-  <label for="fname">Dream:</label><br>
+<form action="https://cat-bounce.com/" target="_blank>
+  <label for="fname">share your dream:</label><br>
   <input type="text" id="fname" value=""><br><br>
   <input type="submit" value="Submit">
 </form> 
+<small>poem writting with a fountain pen, transcribed into html comment<br>
+     (view page source)
+</small>

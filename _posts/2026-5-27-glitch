@@ -1,0 +1,90 @@
+
+---
+author: john trendler
+---
+
+<!--
+terminal flicker / half-remembered uptime logs
+
+we did not build this system alone
+it wrote itself through us
+vibe coding in dim rooms
+keys pressed before thought finished forming
+
+collaborative intelligence / no singular author
+just a swarm of partial knowledges
+braided together in low bandwidth
+
+awake is a consensus state
+dreaming is the background process
+
+toggle failure detected
+or maybe:
+toggle success
+
+   </body>
+</html>
+-->
+
+<h2 style="color:#00ff99; font-family: courier, monospace;">
+[ system state interface v0.9 ]
+</h2>
+
+<p style="font-family: courier, monospace; color:#cccccc;">
+status: <span id="state">AWAKE</span><br>
+signal drift: <span id="drift">stable</span>
+</p>
+
+<button onclick="toggleState()" style="font-family: courier, monospace;">
+toggle state
+</button>
+
+<script>
+let awake = true;
+
+function glitchText(element, text) {
+  const chars = "!<>-_\\/[]{}—=+*^?#________";
+  let iterations = 0;
+
+  const interval = setInterval(() => {
+    element.innerText = text
+      .split("")
+      .map((letter, index) => {
+        if(index < iterations) {
+          return text[index];
+        }
+        return chars[Math.floor(Math.random() * chars.length)];
+      })
+      .join("");
+
+    if(iterations >= text.length){
+      clearInterval(interval);
+    }
+
+    iterations += 1 / 3;
+  }, 30);
+}
+
+function toggleState() {
+  const stateEl = document.getElementById("state");
+  const driftEl = document.getElementById("drift");
+
+  awake = !awake;
+
+  if (awake) {
+    glitchText(stateEl, "AWAKE");
+    glitchText(driftEl, "stable");
+  } else {
+    glitchText(stateEl, "DREAMING");
+    glitchText(driftEl, "noise ↑↑");
+  }
+}
+</script>
+
+<br>
+
+<small style="font-family: courier, monospace;">
+co-authored by distributed attention / ambient cognition<br>
+the machine suggests / we agree / it compiles<br>
+(view source for residual layer)
+</small>
